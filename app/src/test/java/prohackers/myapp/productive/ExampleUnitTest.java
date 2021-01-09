@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package prohackers.myapp.productive;
 
 import org.junit.Test;
 

@@ -1,7 +1,8 @@
-package com.example.myapplication;
+package prohackers.myapp.productive;
 
 import android.os.Bundle;
 
+import com.example.productive.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
