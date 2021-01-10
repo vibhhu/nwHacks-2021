@@ -16,6 +16,10 @@ async function getUser(req, res, next) {
 	next();
 }
 
+router.get("/", (req, res) => {
+    res.send("Hello World!");
+});
+
 /*
  *	GET request for a specific user.
  */
