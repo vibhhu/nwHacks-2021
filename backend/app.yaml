@@ -2,5 +2,5 @@ env: flex
 runtime: nodejs
 
 manual_scaling:
-  instances: 4
+  instances: 1
 
