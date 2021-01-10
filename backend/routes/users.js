@@ -1,13 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
-/*
- *	Middleware function to send in the userid to child routers.
- */
-function sendUserId(req, res, next) {
-	req.userid = req.params.userid;
-	next();
-}
 
 /*
  *	Helper function to get a user by userid.

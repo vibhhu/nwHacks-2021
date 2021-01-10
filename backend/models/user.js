@@ -11,7 +11,14 @@ const userSchema = new mongoose.Schema({
 	email: {
 		type: String
     },
-    tasks: [String]
+    tasks: [String],
+    currentWeek: [String],
+    previousWeekScore: {
+        type: Number
+    },
+    currentWeekScore: {
+        type: Number
+    }
 }, { collection: "userDB" });
 
 module.exports = mongoose.model("User", userSchema);
