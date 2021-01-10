@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="prohackers.myapp.productive.ui.dashboard.DashboardFragment"
+        android:name="prohackers.myapp.productive.ui.task.TaskFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_task" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="prohackers.myapp.productive.ui.notifications.NotificationsFragment"
+        android:name="prohackers.myapp.productive.ui.social.SocialFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_social" />
 </navigation>

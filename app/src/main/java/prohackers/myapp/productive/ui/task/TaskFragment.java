@@ -1,4 +1,4 @@
-package prohackers.myapp.productive.ui.dashboard;
+package prohackers.myapp.productive.ui.task;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import prohackers.myapp.productive.R;
 
-public class DashboardFragment extends Fragment {
+public class TaskFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private TaskViewModel dashboardViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+                new ViewModelProvider(this).get(TaskViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_task, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
